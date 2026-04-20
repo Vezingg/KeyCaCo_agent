@@ -1,0 +1,45 @@
+# Dockerfile.web — College Search Agent (Web Chatbot)
+#
+# Two processes inside the container:
+#   • FastWorkflow  → port 8000  (internal, agent API)
+#   • web_server.py → port 8080  (public, serves the chatbot website)
+#
+# Cloud Run routes external traffic to port 8080.
+
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# System deps: gcc for native extensions, curl for health-check polling
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends gcc curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Python dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Application code
+COPY college_search_agent/ ./college_search_agent/
+
+# Startup script
+COPY start-web.sh /app/start-web.sh
+RUN chmod +x /app/start-web.sh
+
+# Pre-train FastWorkflow routing models (baked into the image so cold-start is fast)
+RUN python -m fastworkflow.train \
+    /app/college_search_agent \
+    /app/college_search_agent/fastworkflow.env \
+    /app/college_search_agent/fastworkflow.passwords.env
+
+# Runtime env
+ENV FASTWORKFLOW_URL=http://localhost:8000
+ENV WEB_PORT=8080
+ENV HOST=0.0.0.0
+
+# 8000 = FastWorkflow (internal only)
+# 8080 = Web chatbot   (Cloud Run public port)
+EXPOSE 8000
+EXPOSE 8080
+
+CMD ["/bin/bash", "/app/start-web.sh"]

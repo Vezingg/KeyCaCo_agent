@@ -1,0 +1,11 @@
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+httpx>=0.25.0
+fastworkflow==2.17.31
+pydantic>=2.0.0
+datasets
+fastapi_mcp
+Babel
+litellm
+pymupdf>=1.24.0
+openpyxl>=3.1.0
