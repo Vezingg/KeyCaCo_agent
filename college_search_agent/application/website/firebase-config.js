@@ -19,7 +19,7 @@ import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.12.0/firebas
 
 // ── Firebase project config ────────────────────────────────────────────────
 const firebaseConfig = {
-    apiKey: "AIzaSyAUxbro0WCsN-BuTMW1mltlcVf-P5D2hMU",
+    apiKey: "",
     authDomain: "ks-agent-493211-fcb85.firebaseapp.com",
     projectId: "ks-agent-493211-fcb85",
     storageBucket: "ks-agent-493211-fcb85.firebasestorage.app",
