@@ -212,6 +212,7 @@ college_search_agent/___workflow_contexts
 ___workflow_contexts
 action.jsonl
 college_search_agent/fastworkflow.passwords.env
-last_50_logs.txt
+last_logs.txt
 NIRF_ranking.txt
 college_search_agent/college_data/KeyCaCo Colleges Snapshot.xlsx
+college_search_agent/application/website/firebase-config.js

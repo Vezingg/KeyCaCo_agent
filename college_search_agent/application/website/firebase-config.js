@@ -19,13 +19,13 @@ import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.12.0/firebas
 
 // ── Firebase project config ────────────────────────────────────────────────
 const firebaseConfig = {
-    apiKey: "",
-    authDomain: "ks-agent-493211-fcb85.firebaseapp.com",
-    projectId: "ks-agent-493211-fcb85",
-    storageBucket: "ks-agent-493211-fcb85.firebasestorage.app",
-    messagingSenderId: "476895652625",
-    appId: "1:476895652625:web:55a8706a92917be321fab0",
-    measurementId: "G-7T7S81QY7L",
+    apiKey: "AIzaSyCBRXkRW_YRRF9UeUcgymtzKU_LS0WFhAY",
+    authDomain: "keycaco.firebaseapp.com",
+    projectId: "keycaco",
+    storageBucket: "keycaco.firebasestorage.app",
+    messagingSenderId: "810784016825",
+    appId: "1:810784016825:web:3f53fe954de0a67488ce68",
+    measurementId: "G-DF0WN6HE9N"
 };
 // ───────────────────────────────────────────────────────────────────────────
 

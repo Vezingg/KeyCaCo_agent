@@ -1,10 +1,14 @@
-# Dockerfile.web — College Search Agent (Web Chatbot)
+# Dockerfile.web — College Search Agent
 #
 # Two processes inside the container:
 #   • FastWorkflow  → port 8000  (internal, agent API)
-#   • web_server.py → port 8080  (public, serves the chatbot website)
+#   • main.py       → port 8080  (public, web chatbot + WhatsApp webhook)
 #
 # Cloud Run routes external traffic to port 8080.
+# Routes available at port 8080:
+#   /              → web chatbot
+#   /webhooks/*    → WhatsApp webhook
+#   /health        → health check
 
 FROM python:3.11-slim
 

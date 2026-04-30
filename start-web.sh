@@ -1,11 +1,15 @@
 #!/bin/bash
-# start-web.sh — Entrypoint for the College Search Agent web container.
+# start-web.sh — Entrypoint for the College Search Agent container.
 #
 # Starts two processes:
-#   1. FastWorkflow (port 8000, internal)  — the AI agent API
-#   2. web_server.py (port 8080, public)   — the chatbot website
+#   1. FastWorkflow  (port 8000, internal) — the AI agent API
+#   2. main.py       (port 8080, public)   — web chatbot + WhatsApp webhook
 #
 # Cloud Run only exposes port 8080.
+# Routes:
+#   /              → web chatbot
+#   /webhooks/*    → WhatsApp webhook
+#   /health        → health check
 set -e
 
 # ── 1. FastWorkflow ──────────────────────────────────────────────────────────
@@ -47,9 +51,9 @@ echo "[start] FastWorkflow is ready after ${SECONDS_WAITED}s!"
     done
 ) &
 
-# ── 4. Web server (foreground, Cloud Run tracks this process) ────────────────
-echo "[start] Starting web server on port 8080..."
-exec uvicorn college_search_agent.application.web_server:app \
+# ── 4. Combined server — web chatbot + WhatsApp webhook (foreground) ─────────
+echo "[start] Starting combined server on port 8080..."
+exec uvicorn college_search_agent.application.main:app \
     --host 0.0.0.0 \
     --port 8080 \
     --workers 1

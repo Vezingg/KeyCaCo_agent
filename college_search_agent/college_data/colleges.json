@@ -11,7 +11,7 @@
     "course": "B.Tech",
     "college": "NIT Surat",
     "avg_board_cutoff_pct": 75.0,
-    "avg_entrance_cutoff": null,
+    "avg_entrance_cutoff": "99+ Perc JEE M",
     "annual_fees": 120000.0,
     "annual_fees_display": "1.20L"
   },
@@ -19,7 +19,7 @@
     "course": "B.Tech",
     "college": "Nirma",
     "avg_board_cutoff_pct": 94.0,
-    "avg_entrance_cutoff": "30k - 50k AIR",
+    "avg_entrance_cutoff": "98+ Perc JEE M",
     "annual_fees": 300000.0,
     "annual_fees_display": "3.00L"
   },
@@ -27,7 +27,7 @@
     "course": "B.Tech",
     "college": "DAIICT",
     "avg_board_cutoff_pct": null,
-    "avg_entrance_cutoff": null,
+    "avg_entrance_cutoff": "99+ Perc JEE M",
     "annual_fees": 400000.0,
     "annual_fees_display": "4.00L"
   },
@@ -35,15 +35,15 @@
     "course": "B.Tech",
     "college": "LD",
     "avg_board_cutoff_pct": 93.0,
-    "avg_entrance_cutoff": "105+ marks",
+    "avg_entrance_cutoff": "105+ Gujcet Marks",
     "annual_fees": 15000.0,
     "annual_fees_display": "0.15L"
   },
   {
     "course": "B.Tech",
     "college": "PDEU",
-    "avg_board_cutoff_pct": null,
-    "avg_entrance_cutoff": null,
+    "avg_board_cutoff_pct": 90.0,
+    "avg_entrance_cutoff": "90-95 Percentile JEE M",
     "annual_fees": 340000.0,
     "annual_fees_display": "3.40L"
   },
@@ -51,7 +51,7 @@
     "course": "B.Tech",
     "college": "AU",
     "avg_board_cutoff_pct": null,
-    "avg_entrance_cutoff": null,
+    "avg_entrance_cutoff": "75-85 Perc JEE M",
     "annual_fees": 375000.0,
     "annual_fees_display": "3.75L"
   },
@@ -59,7 +59,7 @@
     "course": "B.Tech",
     "college": "LJ",
     "avg_board_cutoff_pct": null,
-    "avg_entrance_cutoff": null,
+    "avg_entrance_cutoff": "75+ Gujcet Marks",
     "annual_fees": 100000.0,
     "annual_fees_display": "1.00L"
   },
@@ -67,7 +67,7 @@
     "course": "B.Tech",
     "college": "Indus",
     "avg_board_cutoff_pct": null,
-    "avg_entrance_cutoff": null,
+    "avg_entrance_cutoff": "65+ Gujcet Marks",
     "annual_fees": 110000.0,
     "annual_fees_display": "1.10L"
   },
@@ -75,7 +75,7 @@
     "course": "B.Tech",
     "college": "KU",
     "avg_board_cutoff_pct": null,
-    "avg_entrance_cutoff": null,
+    "avg_entrance_cutoff": "65+ Gujcet Marks",
     "annual_fees": 170000.0,
     "annual_fees_display": "1.7L-2.7L"
   },
@@ -83,7 +83,7 @@
     "course": "B.Tech",
     "college": "SKIPS",
     "avg_board_cutoff_pct": null,
-    "avg_entrance_cutoff": null,
+    "avg_entrance_cutoff": "55+ Gujcet Marks",
     "annual_fees": 110000.0,
     "annual_fees_display": "1.10L"
   },
@@ -91,7 +91,7 @@
     "course": "B.Tech",
     "college": "GLS",
     "avg_board_cutoff_pct": null,
-    "avg_entrance_cutoff": null,
+    "avg_entrance_cutoff": "65+ Gujcet Marks",
     "annual_fees": 140000.0,
     "annual_fees_display": "1.40L"
   },
@@ -99,7 +99,7 @@
     "course": "B.Tech",
     "college": "SAL*",
     "avg_board_cutoff_pct": null,
-    "avg_entrance_cutoff": null,
+    "avg_entrance_cutoff": "55+ Gujcet Marks",
     "annual_fees": 75000.0,
     "annual_fees_display": "0.75L"
   },
@@ -107,28 +107,36 @@
     "course": "B.Tech",
     "college": "JG",
     "avg_board_cutoff_pct": null,
-    "avg_entrance_cutoff": null,
-    "annual_fees": null,
-    "annual_fees_display": null
+    "avg_entrance_cutoff": "50+ Gujcet Marks",
+    "annual_fees": 75000.0,
+    "annual_fees_display": "0.75L"
   },
   {
     "course": "B.Tech",
     "college": "Silveroak*",
     "avg_board_cutoff_pct": null,
-    "avg_entrance_cutoff": null,
+    "avg_entrance_cutoff": "55+ Gujcet Marks",
     "annual_fees": 75000.0,
     "annual_fees_display": "0.75L"
   },
   {
-    "course": "BBA",
+    "course": null,
+    "college": "College",
+    "avg_board_cutoff_pct": null,
+    "avg_entrance_cutoff": "Avg Entrance Cutoff",
+    "annual_fees": null,
+    "annual_fees_display": "Annual Fees"
+  },
+  {
+    "course": null,
     "college": "Nirma",
     "avg_board_cutoff_pct": null,
-    "avg_entrance_cutoff": null,
+    "avg_entrance_cutoff": "IPMAT",
     "annual_fees": 389000.0,
     "annual_fees_display": "3.89L"
   },
   {
-    "course": "BBA",
+    "course": null,
     "college": "PDEU",
     "avg_board_cutoff_pct": null,
     "avg_entrance_cutoff": null,
@@ -136,7 +144,7 @@
     "annual_fees_display": "3.00L"
   },
   {
-    "course": "BBA",
+    "course": null,
     "college": "AU",
     "avg_board_cutoff_pct": null,
     "avg_entrance_cutoff": null,
@@ -144,7 +152,7 @@
     "annual_fees_display": "6.00L"
   },
   {
-    "course": "BBA",
+    "course": null,
     "college": "LJ",
     "avg_board_cutoff_pct": null,
     "avg_entrance_cutoff": null,
@@ -152,7 +160,7 @@
     "annual_fees_display": "1.00L"
   },
   {
-    "course": "BBA",
+    "course": null,
     "college": "Indus",
     "avg_board_cutoff_pct": null,
     "avg_entrance_cutoff": null,
@@ -160,15 +168,15 @@
     "annual_fees_display": "0.80L"
   },
   {
-    "course": "BBA",
+    "course": null,
     "college": "KU",
     "avg_board_cutoff_pct": null,
-    "avg_entrance_cutoff": null,
+    "avg_entrance_cutoff": "KUAT",
     "annual_fees": 300000.0,
     "annual_fees_display": "3.00L"
   },
   {
-    "course": "BBA",
+    "course": null,
     "college": "JG",
     "avg_board_cutoff_pct": null,
     "avg_entrance_cutoff": null,
@@ -176,7 +184,7 @@
     "annual_fees_display": null
   },
   {
-    "course": "BBA",
+    "course": null,
     "college": "SKIPS",
     "avg_board_cutoff_pct": null,
     "avg_entrance_cutoff": null,
@@ -184,7 +192,7 @@
     "annual_fees_display": "1.35L"
   },
   {
-    "course": "BBA",
+    "course": null,
     "college": "GLS",
     "avg_board_cutoff_pct": null,
     "avg_entrance_cutoff": null,
@@ -192,7 +200,7 @@
     "annual_fees_display": "0.88L"
   },
   {
-    "course": "BBA",
+    "course": null,
     "college": "SAL",
     "avg_board_cutoff_pct": null,
     "avg_entrance_cutoff": null,
@@ -200,7 +208,7 @@
     "annual_fees_display": "0.55L"
   },
   {
-    "course": "BBA",
+    "course": null,
     "college": "Silveroak",
     "avg_board_cutoff_pct": null,
     "avg_entrance_cutoff": null,
@@ -208,7 +216,7 @@
     "annual_fees_display": "0.55L"
   },
   {
-    "course": "B.Com",
+    "course": null,
     "college": "HL / CFA",
     "avg_board_cutoff_pct": null,
     "avg_entrance_cutoff": null,
@@ -216,7 +224,7 @@
     "annual_fees_display": "0.80L"
   },
   {
-    "course": "B.Sc (Finance)",
+    "course": null,
     "college": "SKIPS",
     "avg_board_cutoff_pct": null,
     "avg_entrance_cutoff": null,

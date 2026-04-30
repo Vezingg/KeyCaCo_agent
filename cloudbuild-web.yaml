@@ -4,7 +4,7 @@ steps:
     args:
       - 'build'
       - '-t'
-      - 'asia-south1-docker.pkg.dev/kavacch-agent-lite-491904/agent-repo/college-search-web:latest'
+      - 'asia-south1-docker.pkg.dev/keycaco/agent-repo/college-search-web:latest'
       - '-f'
       - 'Dockerfile.web'
       - '.'
@@ -14,11 +14,11 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args:
       - 'push'
-      - 'asia-south1-docker.pkg.dev/kavacch-agent-lite-491904/agent-repo/college-search-web:latest'
+      - 'asia-south1-docker.pkg.dev/keycaco/agent-repo/college-search-web:latest'
     timeout: 1200s
 
 images:
-  - 'asia-south1-docker.pkg.dev/kavacch-agent-lite-491904/agent-repo/college-search-web:latest'
+  - 'asia-south1-docker.pkg.dev/keycaco/agent-repo/college-search-web:latest'
 
 timeout: 1800s
 options:
